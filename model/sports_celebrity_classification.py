@@ -49,7 +49,7 @@ celebrity_file_names_dict = {}
 for img_dir in img_dirs:
     count = 1
     celebrity_name = img_dir.path.split('/')[-1]
-    print(celebrity_name)
+    # print(celebrity_name)
     
     celebrity_file_names_dict[celebrity_name] = []
     
@@ -67,4 +67,4 @@ for img_dir in img_dirs:
             
             cv2.imwrite(cropped_file_path, roi_color)
             celebrity_file_names_dict[celebrity_name].append(cropped_file_path)
-            count += 1    
+            count += 1
